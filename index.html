@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Tec-Tel × mokSa — Partnership Brief</title>
+<meta name="description" content="How mokSa's retail-security AI and Tec-Tel's nationwide field force fit together — a partnership brief following our July 8 introduction.">
+<meta property="og:title" content="Tec-Tel × mokSa — Partnership Brief">
+<meta property="og:description" content="You built the AI. We're the field force that installs it, store by store.">
+<meta property="og:type" content="website">
+<style>
+  :root{
+    --paper:#F5F6FB; --surface:#FFFFFF; --surface-2:#ECEDF6;
+    --ink:#141425; --ink-soft:#4B4C63; --ink-faint:#82849B;
+    --line:#E0E1EE; --line-strong:#CBCDE0;
+    --tec:#124E86; --tec-tint:#E7F0F9;
+    --mok:#6338D6; --mok-tint:#ECE6FB;
+    --shadow:0 1px 2px rgba(20,20,37,.05),0 10px 30px -12px rgba(20,20,37,.16);
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+    --maxw:940px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0B0A14; --surface:#14131F; --surface-2:#1B1A29;
+      --ink:#ECECF6; --ink-soft:#A6A7BD; --ink-faint:#74758c;
+      --line:#262636; --line-strong:#343349;
+      --tec:#5AA6EC; --tec-tint:#122B41;
+      --mok:#9E86F2; --mok-tint:#1F1640;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 34px -14px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="light"]{
+    --paper:#F5F6FB; --surface:#FFFFFF; --surface-2:#ECEDF6;
+    --ink:#141425; --ink-soft:#4B4C63; --ink-faint:#82849B;
+    --line:#E0E1EE; --line-strong:#CBCDE0;
+    --tec:#124E86; --tec-tint:#E7F0F9;
+    --mok:#6338D6; --mok-tint:#ECE6FB;
+    --shadow:0 1px 2px rgba(20,20,37,.05),0 10px 30px -12px rgba(20,20,37,.16);
+  }
+  :root[data-theme="dark"]{
+    --paper:#0B0A14; --surface:#14131F; --surface-2:#1B1A29;
+    --ink:#ECECF6; --ink-soft:#A6A7BD; --ink-faint:#74758c;
+    --line:#262636; --line-strong:#343349;
+    --tec:#5AA6EC; --tec-tint:#122B41;
+    --mok:#9E86F2; --mok-tint:#1F1640;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 12px 34px -14px rgba(0,0,0,.6);
+  }
+
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+    font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px 72px;
+    display:flex;flex-direction:column;gap:46px;animation:rise .5s ease both;}
+  @keyframes rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  @media(prefers-reduced-motion:reduce){.wrap{animation:none;}}
+
+  h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.02em;font-weight:800;}
+  p{margin:0;}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+    font-weight:600;color:var(--ink-faint);}
+
+  .lockbar{display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:22px 0 20px;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .lockup{display:flex;align-items:center;gap:13px;font-weight:800;font-size:19px;letter-spacing:-.01em;}
+  .lockup .tec{color:var(--tec);}
+  .lockup .mok{color:var(--mok);}
+  .lockup .x{color:var(--ink-faint);font-weight:500;font-size:16px;}
+  .lockbar .meta{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--ink-faint);text-align:right;}
+
+  .hero{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);
+    border-radius:5px;box-shadow:var(--shadow);padding:46px clamp(26px,5vw,52px) 44px;}
+  .hero .scan{position:absolute;top:-30%;right:-6%;width:52%;height:160%;opacity:.55;pointer-events:none;}
+  .hero .inner{position:relative;max-width:36ch;}
+  .hero .eyebrow{color:var(--mok);}
+  .hero h1{font-size:clamp(28px,4.6vw,44px);line-height:1.05;margin:16px 0 0;max-width:20ch;}
+  .hero h1 .m{color:var(--mok);}
+  .hero h1 .t{color:var(--tec);}
+  .hero .lede{margin-top:18px;font-size:17px;line-height:1.5;color:var(--ink-soft);max-width:52ch;}
+  .hero .lede b{color:var(--ink);font-weight:600;}
+  .hero .tagpair{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);
+    font-size:11px;letter-spacing:.04em;}
+  .hero .tagpair span{padding:6px 11px;border-radius:999px;border:1px solid var(--line-strong);
+    color:var(--ink-soft);background:var(--paper);}
+
+  section{display:flex;flex-direction:column;gap:20px;}
+  .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;}
+  .sec-head .n{font-family:var(--mono);font-size:12px;font-weight:700;color:var(--mok);letter-spacing:.05em;}
+  .sec-head h2{font-size:23px;line-height:1.15;}
+  .sec-head .note{margin-left:auto;font-size:13px;color:var(--ink-faint);max-width:40ch;text-align:right;}
+  @media(max-width:640px){.sec-head .note{margin-left:0;text-align:left;}}
+
+  .recap{background:var(--surface);border:1px solid var(--line);border-radius:4px;
+    box-shadow:var(--shadow);padding:24px clamp(22px,4vw,30px);display:grid;
+    grid-template-columns:1.35fr 1fr;gap:28px;}
+  @media(max-width:640px){.recap{grid-template-columns:1fr;gap:18px;}}
+  .recap p{font-size:14.5px;color:var(--ink-soft);}
+  .recap p b{color:var(--ink);font-weight:600;}
+  .recap .facts{border-left:2px solid var(--line-strong);padding-left:18px;
+    display:flex;flex-direction:column;gap:12px;}
+  .recap .facts .f .k{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-faint);display:block;margin-bottom:2px;}
+  .recap .facts .f .v{font-size:13.5px;color:var(--ink);}
+
+  .experts{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.experts{grid-template-columns:1fr;}}
+  .co{background:var(--surface);border:1px solid var(--line);border-radius:4px;box-shadow:var(--shadow);
+    overflow:hidden;display:flex;flex-direction:column;}
+  .co .cap{height:3px;}
+  .co.mokco .cap{background:var(--mok);}
+  .co.tecco .cap{background:var(--tec);}
+  .co .body{padding:22px clamp(20px,3vw,26px) 24px;display:flex;flex-direction:column;gap:12px;}
+  .co .name{font-size:18px;font-weight:800;letter-spacing:-.01em;display:flex;align-items:baseline;gap:9px;}
+  .co.mokco .name{color:var(--mok);} .co.tecco .name{color:var(--tec);}
+  .co .name .yrs{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;color:var(--ink-faint);font-weight:600;}
+  .co .role{font-size:13.5px;color:var(--ink-soft);margin-top:-4px;}
+  .co ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;}
+  .co li{font-size:13.5px;color:var(--ink-soft);padding-left:20px;position:relative;line-height:1.45;}
+  .co li b{color:var(--ink);font-weight:600;}
+  .co li::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:2px;}
+  .co.mokco li::before{background:var(--mok);} .co.tecco li::before{background:var(--tec);}
+
+  /* flow: brain -> hands -> scale */
+  .flow3{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:stretch;gap:0;
+    border:1px solid var(--line);border-radius:5px;overflow:hidden;box-shadow:var(--shadow);}
+  .node{background:var(--surface);padding:22px clamp(16px,2vw,22px);display:flex;flex-direction:column;gap:7px;}
+  .node .tag{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;}
+  .node.n-mok{background:var(--mok-tint);} .node.n-mok .tag{color:var(--mok);}
+  .node.n-tec{background:var(--tec-tint);} .node.n-tec .tag{color:var(--tec);}
+  .node.n-out .tag{color:var(--ink-faint);}
+  .node .h{font-size:15.5px;font-weight:800;letter-spacing:-.01em;}
+  .node .s{font-size:12.5px;color:var(--ink-soft);}
+  .arrow{display:flex;align-items:center;justify-content:center;padding:0 6px;background:var(--surface);
+    color:var(--ink-faint);font-size:20px;font-weight:300;}
+  @media(max-width:680px){.flow3{grid-template-columns:1fr;}
+    .arrow{padding:8px 0;transform:rotate(90deg);}}
+  .flowcap{background:var(--surface-2);border:1px solid var(--line-strong);border-radius:4px;
+    padding:15px 20px;font-size:13.5px;color:var(--ink-soft);}
+  .flowcap b{color:var(--ink);font-weight:600;}
+
+  .reciprocity{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:640px){.reciprocity{grid-template-columns:1fr;}}
+  .fl{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 20px;box-shadow:var(--shadow);}
+  .fl .dir{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.03em;margin-bottom:7px;}
+  .fl.m .dir{color:var(--mok);} .fl.t .dir{color:var(--tec);}
+  .fl p{font-size:13.5px;color:var(--ink-soft);} .fl p b{color:var(--ink);font-weight:600;}
+
+  .markets{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);border-radius:4px;overflow:hidden;box-shadow:var(--shadow);}
+  @media(max-width:720px){.markets{grid-template-columns:1fr;}}
+  .mkt{background:var(--surface);padding:22px;display:flex;flex-direction:column;gap:9px;}
+  .mkt .mh{font-size:16px;font-weight:800;letter-spacing:-.01em;}
+  .mkt .stat{font-family:var(--mono);font-size:11px;color:var(--mok);font-weight:600;letter-spacing:.03em;}
+  .mkt p{font-size:13px;color:var(--ink-soft);}
+
+  /* CTA band */
+  .cta{background:var(--surface);border:1px solid var(--line);border-radius:5px;box-shadow:var(--shadow);
+    padding:26px clamp(24px,4vw,34px);display:flex;justify-content:space-between;align-items:center;
+    gap:22px;flex-wrap:wrap;border-top:3px solid var(--tec);}
+  .cta h3{font-size:clamp(18px,2.6vw,23px);max-width:22ch;line-height:1.2;}
+  .cta .act{text-align:right;}
+  .cta .act .call{font-size:13px;color:var(--ink-soft);}
+  .cta .act .num{font-size:22px;font-weight:800;color:var(--tec);letter-spacing:-.01em;margin-top:2px;
+    font-variant-numeric:tabular-nums;}
+  .cta .act .who{font-family:var(--mono);font-size:11px;color:var(--ink-faint);letter-spacing:.04em;margin-top:2px;}
+
+  .steps{display:flex;flex-direction:column;gap:2px;border:1px solid var(--line);border-radius:4px;
+    overflow:hidden;background:var(--line);}
+  .steps .row{background:var(--surface);padding:15px 20px;display:grid;
+    grid-template-columns:26px 1fr 120px;gap:16px;align-items:center;}
+  @media(max-width:640px){.steps .row{grid-template-columns:22px 1fr;}.steps .row .owner{display:none;}}
+  .steps .row .num{font-family:var(--mono);font-size:12px;color:var(--mok);font-weight:700;}
+  .steps .row .d{font-size:14px;color:var(--ink);} .steps .row .d b{font-weight:600;}
+  .steps .row .owner{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+    color:var(--ink-faint);text-align:right;}
+
+  footer{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;
+    align-items:flex-end;gap:14px;flex-wrap:wrap;}
+  footer .sig .nm{font-weight:800;font-size:15px;}
+  footer .sig .dt{font-size:13px;color:var(--ink-soft);margin-top:2px;}
+  footer .contact{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--ink-faint);
+    text-align:right;line-height:1.7;}
+
+  @media print{
+    body{background:#fff;}
+    .wrap{animation:none;gap:26px;padding-bottom:0;}
+    .hero,.recap,.co,.flow3,.fl,.markets,.steps,.cta{box-shadow:none;}
+    section,.experts,.markets,.flow3,.reciprocity{break-inside:avoid;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="lockbar">
+    <div class="lockup">
+      <span class="tec">TEC&#8209;TEL</span><span class="x">&times;</span><span class="mok">mokSa</span>
+    </div>
+    <div class="meta">Partnership Brief<br>Following our July 8 introduction</div>
+  </div>
+
+  <div class="hero">
+    <svg class="scan" viewBox="0 0 200 200" fill="none" aria-hidden="true">
+      <g stroke="var(--mok)" stroke-width="1.3" opacity="0.85">
+        <rect x="34" y="34" width="132" height="132" rx="10"/>
+        <path d="M34 70 H166 M34 106 H166 M34 142 H166" opacity="0.4"/>
+        <path d="M70 34 V166 M106 34 V166 M142 34 V166" opacity="0.4"/>
+      </g>
+      <rect x="92" y="92" width="34" height="26" rx="4" stroke="var(--tec)" stroke-width="2.2" fill="none"/>
+    </svg>
+    <div class="inner">
+      <span class="eyebrow">The opportunity</span>
+      <h1>You built the <span class="m">AI</span>. We&rsquo;re the <span class="t">field force that installs it, store by store</span>.</h1>
+      <p class="lede">mokSa has the retail-security AI and the traction. What it doesn&rsquo;t have is a
+        nationwide field force to deploy it store by store. <b>That is exactly what Tec-Tel is.</b> You
+        close the enterprise deal, we install it everywhere, and the customer never sees the seam.</p>
+      <div class="tagpair">
+        <span>mokSa &middot; privacy-first retail AI</span>
+        <span>Tec-Tel &middot; nationwide integration</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 01 -->
+  <section>
+    <div class="sec-head"><span class="n">01</span><h2>What we talked about</h2>
+      <span class="note">A Boardy intro that turned into an obvious fit.</span></div>
+    <div class="recap">
+      <p>Boardy connected us because the shapes lock together: mokSa runs privacy-first shoplifting and
+        threat detection <b>on the cameras a store already owns</b>, and Tec-Tel is a nationwide integrator
+        that installs and services that kind of system at scale. You told us the honest bottleneck &mdash;
+        you&rsquo;re actively looking for <b>integration partners</b> to onboard enterprise accounts like
+        7-Eleven and BP because you don&rsquo;t have the bandwidth to run installs nationwide. We do. We also
+        talked about pointing our two marketing teams at the retail and convenience-store space together,
+        and lining up a first project to prove the model.</p>
+      <div class="facts">
+        <div class="f"><span class="k">In the room</span><span class="v">Joe Intoci (Tec-Tel), Nikhil Teja Kolli (mokSa, Co-Founder &amp; CEO)</span></div>
+        <div class="f"><span class="k">Introduced by</span><span class="v">Boardy</span></div>
+        <div class="f"><span class="k">The shape</span><span class="v">mokSa = the AI. Tec-Tel = the nationwide install.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section>
+    <div class="sec-head"><span class="n">02</span><h2>What each of us does best</h2>
+      <span class="note">The AI, and the field force that puts it on site.</span></div>
+    <div class="experts">
+      <div class="co mokco">
+        <div class="cap"></div>
+        <div class="body">
+          <div class="name">mokSa <span class="yrs">200+ retail sites</span></div>
+          <div class="role">Privacy-first, camera-agnostic retail-security AI that runs on the cameras a store already owns &mdash; no new hardware, no facial recognition or biometrics.</div>
+          <ul>
+            <li>Detects <b>shoplifting and concealment, violence, weapons, slip-and-fall,</b> and employee efficiency</li>
+            <li>Custom models (10&ndash;15M parameters, 2 patents) with a <b>75% accuracy floor from day one</b> that climbs as it learns the site</li>
+            <li>Proven at <b>200+ sites</b> &mdash; Coles, Victoria&rsquo;s Secret, 7-Eleven &mdash; with <b>low false positives</b> ($7K in concealment caught in 3 months at one store)</li>
+            <li><b>SOC 2 Type 2 and GDPR</b> certified &mdash; privacy handled the right way</li>
+          </ul>
+        </div>
+      </div>
+      <div class="co tecco">
+        <div class="cap"></div>
+        <div class="body">
+          <div class="name">Tec-Tel <span class="yrs">since 2010</span></div>
+          <div class="role">Nationwide AI-driven security integrator &mdash; the field force that turns software into installed, working systems.</div>
+          <ul>
+            <li><b>1,000+ deployments, 99.9% uptime</b>, coast to coast &mdash; camera install, edge-device rollout, and onboarding at scale</li>
+            <li><b>Hardware-flexible</b> (Axis, Hanwha, and more) and works on existing camera fleets &mdash; no rip-and-replace</li>
+            <li>Deep vertical relationships &mdash; Amazon, Bridgestone, Hilton, Dunkin&rsquo;, TreeHouse &mdash; plus real retail and c-store reach</li>
+            <li>An <b>AI-forward integrator</b>: we run our own automation and an insurance-savings program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 -->
+  <section>
+    <div class="sec-head"><span class="n">03</span><h2>Where we help each other</h2>
+      <span class="note">One workflow, from your model to a live storefront.</span></div>
+    <div class="flow3">
+      <div class="node n-mok"><span class="tag">mokSa</span>
+        <div class="h">The AI</div>
+        <div class="s">Detection models, trained and tuned, running on existing cameras.</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="node n-tec"><span class="tag">Tec-Tel</span>
+        <div class="h">The nationwide deploy</div>
+        <div class="s">Install, edge devices, and onboarding, store by store, anywhere in the country.</div></div>
+      <div class="arrow">&rarr;</div>
+      <div class="node n-out"><span class="tag">Result</span>
+        <div class="h">Live at scale</div>
+        <div class="s">Hundreds of sites monitored, one seamless rollout, one relationship.</div></div>
+    </div>
+    <div class="reciprocity">
+      <div class="fl m">
+        <div class="dir">mokSa &rarr; Tec-Tel</div>
+        <p>Best-in-class retail loss-prevention AI to layer onto our installs &mdash; and a real
+          <b>foothold in retail and convenience stores</b>, a vertical your niche opens for us.</p>
+      </div>
+      <div class="fl t">
+        <div class="dir">Tec-Tel &rarr; mokSa</div>
+        <p>The nationwide field force you&rsquo;re missing. We handle install, edge devices, and onboarding for
+          <b>7-Eleven- and BP-scale rollouts</b>, so you close enterprise without building a national ops team.
+          You don&rsquo;t sell cameras &mdash; when a site needs hardware, that flows through us too.</p>
+      </div>
+    </div>
+    <div class="flowcap"><b>Plus joint go-to-market.</b> Point your team and ours at the same retail and
+      c-store targets &mdash; a campaign that pairs your detection results with our install muscle. You asked
+      to work with our marketing team on positioning; that&rsquo;s the door.</div>
+  </section>
+
+  <!-- 04 -->
+  <section>
+    <div class="sec-head"><span class="n">04</span><h2>Where it wins first</h2>
+      <span class="note">Your niche, our reach.</span></div>
+    <div class="markets">
+      <div class="mkt">
+        <div class="mh">Convenience stores</div>
+        <div class="stat">Your strongest traction</div>
+        <p>Theft and concealment at c-store scale &mdash; your models, our install across a chain&rsquo;s
+          footprint, priced to work for both SMB and enterprise.</p>
+      </div>
+      <div class="mkt">
+        <div class="mh">Enterprise retail rollouts</div>
+        <div class="stat">7-Eleven &middot; BP</div>
+        <p>You have the relationships and the AI. We bring the nationwide crews that make a
+          multi-hundred-site deployment actually happen on schedule.</p>
+      </div>
+      <div class="mkt">
+        <div class="mh">A first proof-point</div>
+        <div class="stat">Live in our pipeline</div>
+        <p>We have large-scale camera projects moving now that could be the first deployment we run
+          together and point to.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta">
+    <h3>Got a rollout that needs boots on the ground? Call me.</h3>
+    <div class="act">
+      <div class="call">Direct line for integration work</div>
+      <div class="num">732&#8209;580&#8209;3870</div>
+      <div class="who">Joe Intoci &middot; Co-Founder &amp; CEO, Tec-Tel</div>
+    </div>
+  </div>
+
+  <!-- 05 -->
+  <section>
+    <div class="sec-head"><span class="n">05</span><h2>Next steps</h2>
+      <span class="note">Small moves that turn the intro into a rollout.</span></div>
+    <div class="steps">
+      <div class="row"><span class="num">01</span><span class="d">Connect mokSa with <b>Tec-Tel&rsquo;s marketing team</b> to position for SMB and enterprise retail</span><span class="owner">Both</span></div>
+      <div class="row"><span class="num">02</span><span class="d">Scope a <b>joint campaign</b> in your strongest vertical &mdash; your detection results, our install reach</span><span class="owner">Both</span></div>
+      <div class="row"><span class="num">03</span><span class="d">Joe <b>loops mokSa into live client calls</b> to co-sell the AI as deals come up</span><span class="owner">Tec-Tel</span></div>
+      <div class="row"><span class="num">04</span><span class="d">Line up Tec-Tel as your <b>integration partner</b> (white-label optional) for the next enterprise rollout</span><span class="owner">Both</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="sig">
+      <div class="nm">Joe Intoci &mdash; Co-Founder &amp; CEO, Tec-Tel</div>
+      <div class="dt">Prepared following our July 8, 2026 introduction</div>
+    </div>
+    <div class="contact">tec-tel.com<br>732&#8209;580&#8209;3870</div>
+  </footer>
+
+</div>
+</body>
+</html>
